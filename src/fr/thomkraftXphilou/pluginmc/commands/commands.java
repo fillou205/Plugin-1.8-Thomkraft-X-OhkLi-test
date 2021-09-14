@@ -36,10 +36,10 @@ public class commands implements CommandExecutor {
 
                     StringBuilder bc = new StringBuilder();
                     for(String part : args) {
-                        bc.append(part + " ");
+                        bc.append(" §6" + part);
                     }
 
-                    Bukkit.broadcastMessage("[" + player.getName() + "] " + bc.toString());
+                    Bukkit.broadcastMessage("§c[Alert] " + bc.toString());
 
                 }
                 return true;
