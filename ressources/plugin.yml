@@ -1,0 +1,14 @@
+name: PluginPvp
+version: 1.0
+author: OwkLi and Thomkraft
+main: fr.thomkraftXphilou.pluginmc.Main
+commands:
+  test:
+    description: ceci est une commande de test
+    permission: test.use
+  alert:
+    description: ceci est un broadcast custom
+    permission: perm.use
+  kit:
+    description: ceci est un kit d'item
+    permission: kit.use

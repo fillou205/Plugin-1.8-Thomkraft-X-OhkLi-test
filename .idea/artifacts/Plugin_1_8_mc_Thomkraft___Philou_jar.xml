@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="Plugin 1.8 mc Thomkraft &amp; Philou:jar">
+    <output-path>$PROJECT_DIR$/../../../serveur/plugins</output-path>
+    <root id="archive" name="Plugin 1.8 mc Thomkraft &amp; Philou.jar">
+      <element id="module-output" name="Plugin 1.8 mc Thomkraft &amp; Philou" />
+    </root>
+  </artifact>
+</component>
