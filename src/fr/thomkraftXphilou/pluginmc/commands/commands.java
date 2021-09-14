@@ -39,7 +39,8 @@ public class commands implements CommandExecutor {
                         bc.append(" §6" + part);
                     }
 
-                    Bukkit.broadcastMessage("§c[Alert] " + bc.toString());
+
+                    Bukkit.broadcastMessage("§c[Alert] " + bc);
 
                 }
                 return true;
