@@ -45,23 +45,23 @@ public class commands implements CommandExecutor {
                 }
                     return true;
                 }
-            if(cmd.getName().equalsIgnoreCase("kit")) {
+            if(cmd.getName().equalsIgnoreCase("kit")){
 
                 if(args.length == 0){
 
-                    ItemStack customsword = new ItemStack(Material.STONE_SWORD);
+                    ItemStack customsword = new ItemStack(Material.IRON_SWORD);
                     ItemMeta customS = customsword.getItemMeta();
                     customS.addEnchant(Enchantment.DAMAGE_ALL, 2, true);
                     customsword.setItemMeta(customS);
 
 
-                    ItemStack customaxe = new ItemStack(Material.STONE_AXE);
+                    ItemStack customaxe = new ItemStack(Material.IRON_PICKAXE);
                     ItemMeta customA = customaxe.getItemMeta();
                     customA.addEnchant(Enchantment.DIG_SPEED, 2, true);
                     customaxe.setItemMeta(customA);
 
 
-                    ItemStack custompickaxe = new ItemStack(Material.STONE_PICKAXE);
+                    ItemStack custompickaxe = new ItemStack(Material.IRON_AXE);
                     ItemMeta customP = custompickaxe.getItemMeta();
                     customP.addEnchant(Enchantment.DIG_SPEED, 2, true);
                     custompickaxe.setItemMeta(customP);
@@ -70,20 +70,59 @@ public class commands implements CommandExecutor {
                     ItemMeta customC = customsteak.getItemMeta();
                     customsteak.setItemMeta(customC);
 
-
                     player.getInventory().addItem(customsword, customaxe, custompickaxe, customsteak);
 
 
-                }else {
-                    System.out.println("Tu na pas la permission !");
+                }
+                if(args[0].equalsIgnoreCase("vip") && player.hasPermission("kit.vip")){
+
+                    ItemStack customsword = new ItemStack(Material.DIAMOND_SWORD);
+                    ItemMeta customS = customsword.getItemMeta();
+                    customS.addEnchant(Enchantment.DAMAGE_ALL, 10, true);
+                    customsword.setItemMeta(customS);
+
+
+                    ItemStack customaxe = new ItemStack(Material.DIAMOND_AXE);
+                    ItemMeta customA = customaxe.getItemMeta();
+                    customA.addEnchant(Enchantment.DIG_SPEED, 10, true);
+                    customaxe.setItemMeta(customA);
+
+
+                    ItemStack custompickaxe = new ItemStack(Material.DIAMOND_PICKAXE);
+                    ItemMeta customP = custompickaxe.getItemMeta();
+                    customP.addEnchant(Enchantment.DIG_SPEED, 10, true);
+                    custompickaxe.setItemMeta(customP);
+
+                    ItemStack customsteak = new ItemStack(Material.COOKED_BEEF, 64);
+                    ItemMeta customC = customsteak.getItemMeta();
+                    customsteak.setItemMeta(customC);
+
+                    player.getInventory().addItem(customsword, customaxe, custompickaxe, customsteak);
+
                 }
 
-                //kit vip
-                //if(args[0].equalsIgnoreCase("vip") && player.hasPermission("kit.vip"))
-
-
-
             }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             if(cmd.getName().equalsIgnoreCase("start")) {
 
                 int max = 300;

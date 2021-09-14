@@ -12,3 +12,6 @@ commands:
   kit:
     description: ceci est un kit d'item
     permission: kit.use
+  kit vip:
+    description: ceci est un kit d'item
+    permission: kit.vip
